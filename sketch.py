@@ -18,6 +18,7 @@ def draw():
     t += 0.1
     p1 = (x + r * cos(t), y + r * sin(t))
     p2 = (x - r * cos(t), y - r * sin(t))
+    ellipse(x, y, r/2, r/2)
     line(p1[0], p1[1], p2[0], p2[1])
 
 
@@ -38,4 +39,4 @@ dApplet.set_setup(setup)
 dApplet.set_draw(draw)
 dApplet.set_user_event(user_event)
 
-dApplet.run_scetch()
+dApplet.run_sketch()
